@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class acListCriaturas
+public class ACListCriaturas
 {
-    public List<acCriaturas> acCreatures = new List<acCriaturas>();
+    public List<ACCriaturas> acCreatures = new List<ACCriaturas>();// Lista para almacenar las criaturas
 }
