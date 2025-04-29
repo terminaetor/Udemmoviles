@@ -8,7 +8,12 @@ public class PuntoGPS : MonoBehaviour
     public UbicadorPuntosGPSGO ubicador;
     [ContextMenu("actualizate")]
     public void ActualizarPosicion()
-    {
+    {        
         transform.position = ubicador.GetPosUnity(punto.x, punto.z);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        ActualizarPosicion();
     }
 }
